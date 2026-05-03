@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# project specific
+lab1_identity.pem
+*.pem
+lab1_config.json
+
 # Distribution / packaging
 .Python
 build/

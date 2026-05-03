@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blockchain-engineering-individual"
+version = "0.1.0"
+description = "Lab 1 IPv8 Proof of Work client"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyipv8",
+]
+
+[tool.setuptools]
+py-modules = [
+    "lab1_config",
+    "lab1_ipv8_client",
+    "lab1_pow",
+]
