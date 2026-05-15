@@ -76,3 +76,7 @@ Important:
 - The response handler is registered for `message_id = 2`.
 - The submission is sent with IPv8 authenticated messaging via `ez_send`.
 - The client ignores response packets from peers whose public key does not match the server.
+
+## Debugging
+Public key definition through:`
+python3 -c "from ipv8.keyvault.crypto import default_eccrypto; k=default_eccrypto.key_from_private_bin(open('lab1_identity.pem','rb').read()); print(k.pub().key_to_bin().hex())"`
